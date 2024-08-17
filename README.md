@@ -141,7 +141,7 @@ The icons are designed with accessibility in mind, using `aria-labels` for scree
 
 ## Deployment
 
-The website is deployed on Netli. You can view the live site [here](https://atpswift.github.io/portfolio-1/).
+The website is deployed on Github Pages. You can view the live site [here](https://atpswift.github.io/Portfolio1/).
 
 ## Testing
 
@@ -160,3 +160,4 @@ Images: Some of the images used in this project are from Pexels:
 [Delicious Dish 1](https://images.pexels.com/photos/2116094/pexels-photo-2116094.jpeg)
 [Delicious Dish 2](https://images.pexels.com/photos/70497/pexels-photo-70497.jpeg)
 [Restaurant Image](https://images.pexels.com/photos/262978/pexels-photo-262978.jpeg)
+

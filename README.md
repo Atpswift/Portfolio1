@@ -161,3 +161,28 @@ Images: Some of the images used in this project are from Pexels:
 [Delicious Dish 2](https://images.pexels.com/photos/70497/pexels-photo-70497.jpeg)
 [Restaurant Image](https://images.pexels.com/photos/262978/pexels-photo-262978.jpeg)
 
+## Deploying to GitHub Pages
+
+We can deploy this project using GitHub Pages. Follow the steps below:
+
+### 1. Push Code to GitHub
+
+After the code is committed and pushed to the main branch of your GitHub repository.
+
+### 2. Configure GitHub Pages
+
+1. Go to your repository on GitHub.
+2. Click on the **Settings** tab.
+3. Scroll down to the **Pages** section in the left sidebar.
+4. Under **Source**, select the branch you want to deploy from (usually `main`) and set the folder to `root` or `docs` (if your files are in a `docs` folder).
+5. Click **Save**.
+
+### 3. Wait for Deployment
+
+GitHub Pages will start building your site. It may take a few minutes. Once it's complete, you will see a green checkmark and the link to your site.
+
+### 4. Access Website
+
+Your project is now live at `https://atpswift.github.io/Portfolio1/`.
+
+

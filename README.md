@@ -145,11 +145,19 @@ The website is deployed on Github Pages. You can view the live site [here](https
 
 ## Testing
 
-| Page      | Test Description                | Status |
-| --------- | ------------------------------- | ------ |
-| index.htm | Check if the homepage loads     | ✔️     |
-| 404.html  | Check if 404 error is handled   | ✔️     |
-|           | Form validation on contact page | ✔️     |
+| Test Case ID | Feature                | Test Steps                                                                 | Expected Result                                              | Actual Result | Status  |
+|--------------|------------------------|---------------------------------------------------------------------------|-------------------------------------------------------------|---------------|---------|
+| TC01         | Home Page Load         | 1. Open the website URL.                                                  | Home page loads successfully with all sections visible.     | As Expected   | Pass    |
+| TC02         | Navigation Menu        | 1. Click on each menu item (e.g., Home, About, Menu, Contact).            | Page scrolls smoothly to the respective section.            | As Expected   | Pass    |
+| TC03         | Form Submission        | 1. Fill in the form fields.                                               | 2. Click the Submit button.                                 | Form is submitted without errors. | As Expected   | Pass    |
+| TC04         | Form Validation        | 1. Leave required fields empty.                                           | 2. Click the Submit button.                                 | Validation messages appear for required fields.             | As Expected   | Pass    |
+| TC05         | Responsive Design      | 1. Resize the browser window or test on different devices (mobile, tablet, desktop). | Website layout adjusts and remains readable on all screen sizes. | As Expected   | Pass    |
+| TC06         | Image Gallery          | 1. Scroll to the image gallery section.                                   | Images are displayed correctly and aligned.                 | As Expected   | Pass    |
+| TC07         | Footer Links           | 1. Scroll to the footer.                                                  | 2. Click on each footer link.                               | Links open in a new tab or navigate correctly.              | As Expected   | Pass    |
+| TC08         | Section Visibility     | 1. Scroll through the page.                                               | All sections (e.g., About, Menu, Contact) are visible and correctly aligned. | As Expected   | Pass    |
+| TC09         | CSS Styling            | 1. Inspect the overall look and feel of the website.                      | Consistent styling throughout the website with no CSS errors. | As Expected   | Pass    |
+
+
 
 ## Attributions
 

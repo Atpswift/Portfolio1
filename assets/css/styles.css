@@ -1,4 +1,5 @@
 :root {
+  /* Define CSS variables for theme colors */
   --primary-color: #333;
   --secondary-color: #f4f4f4;
   --accent-color: #ff6b6b;
@@ -6,389 +7,381 @@
 }
 
 * {
+  /* Box-sizing for all elements to include padding and border in the element's total width and height */
   box-sizing: border-box;
-  margin: 0;
-  padding: 0;
+  margin: 0; /* Remove default margin */
+  padding: 0; /* Remove default padding */
 }
 
 body {
-  font-family: 'Poppins', sans-serif;
-  line-height: 1.6;
-  background-color: var(--secondary-color);
-  color: var(--text-color);
+  font-family: 'Poppins', sans-serif; /* Set font for the entire body */
+  line-height: 1.6; /* Line height for better readability */
+  background-color: var(--secondary-color); /* Background color */
+  color: var(--text-color); /* Text color */
 }
 
 header {
-  background: var(--primary-color);
-  padding: 1rem;
-  position: fixed;
-  width: 100%;
-  z-index: 1000;
+  background: var(--primary-color); /* Header background color */
+  padding: 1rem; /* Padding for header */
+  position: fixed; /* Fix header at the top */
+  width: 100%; /* Header spans the full width */
+  z-index: 1000; /* Ensure header is on top of other elements */
 }
 
 a {
-  text-decoration: none;
-  color: white;
+  text-decoration: none; /* Remove underline from links */
+  color: white; /* Link color */
 }
 
 .logo {
-  color: #fff;
-  font-size: 1.5rem;
-  font-weight: bold;
+  color: #fff; /* Logo text color */
+  font-size: 1.5rem; /* Font size for logo */
+  font-weight: bold; /* Bold font for logo */
 }
 
 nav {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+  display: flex; /* Flexbox layout for navigation */
+  justify-content: space-between; /* Space between logo and nav items */
+  align-items: center; /* Center items vertically */
 }
 
 nav ul {
-  display: flex;
-  list-style: none;
+  display: flex; /* Flex layout for nav items */
+  list-style: none; /* Remove bullet points */
 }
 
 nav ul li {
-  margin-left: 1rem;
+  margin-left: 1rem; /* Space between nav items */
 }
 
 nav ul li a {
-  color: #fff;
-  text-decoration: none;
-  font-weight: 300;
-  transition: color 0.3s ease;
+  color: #fff; /* Nav link color */
+  text-decoration: none; /* Remove underline */
+  font-weight: 300; /* Light font weight */
+  transition: color 0.3s ease; /* Smooth transition on hover */
 }
 
 nav ul li a:hover {
-  color: var(--accent-color);
+  color: var(--accent-color); /* Change color on hover */
 }
 
 .nav-toggle {
-  display: none;
+  display: none; /* Hide the nav toggle by default */
 }
 
 .nav-toggle-label {
-  display: none;
-  cursor: pointer;
+  display: none; /* Hide the nav toggle label by default */
+  cursor: pointer; /* Cursor changes to pointer on hover */
 }
 
 main {
-  padding-top: 60px;
+  padding-top: 60px; /* Space for fixed header */
 }
 
 .hero {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('https://images.pexels.com/photos/1267320/pexels-photo-1267320.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2');
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  height: 100vh;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
-  color: #ffffff;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('https://images.pexels.com/photos/1267320/pexels-photo-1267320.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2'); /* Hero background with gradient overlay */
+  background-position: center; /* Center the background image */
+  background-repeat: no-repeat; /* Do not repeat the background image */
+  background-size: cover; /* Cover the entire section */
+  height: 100vh; /* Full viewport height */
+  display: flex; /* Flexbox for centering content */
+  align-items: center; /* Center items vertically */
+  justify-content: center; /* Center items horizontally */
+  text-align: center; /* Center text */
+  color: #ffffff; /* Text color */
 }
 
 .hero-content {
-  max-width: 800px;
-  padding: 20px;
+  max-width: 800px; /* Maximum width for content */
+  padding: 20px; /* Padding around content */
 }
 
 .hero h1 {
-  color: white;
-  font-size: 3.5rem;
-  margin-bottom: 1rem;
-  text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+  color: white; /* Heading color */
+  font-size: 3.5rem; /* Font size for heading */
+  margin-bottom: 1rem; /* Space below heading */
+  text-shadow: 2px 2px 4px rgba(0,0,0,0.5); /* Text shadow for heading */
 }
 
 .hero p {
-  font-size: 1.5rem;
-  margin-bottom: 2rem;
-  text-shadow: 1px 1px 2px rgba(0,0,0,0.5);
+  font-size: 1.5rem; /* Font size for paragraph */
+  margin-bottom: 2rem; /* Space below paragraph */
+  text-shadow: 1px 1px 2px rgba(0,0,0,0.5); /* Text shadow for paragraph */
 }
 
 .cta-button {
-  display: inline-block;
-  padding: 12px 24px;
-  background-color: #ff6b6b;
-  color: #ffffff;
-  text-decoration: none;
-  font-size: 1.2rem;
-  font-weight: bold;
-  border-radius: 5px;
-  transition: background-color 0.3s ease;
+  display: inline-block; /* Display button inline */
+  padding: 12px 24px; /* Padding inside button */
+  background-color: #ff6b6b; /* Button background color */
+  color: #ffffff; /* Button text color */
+  text-decoration: none; /* Remove underline */
+  font-size: 1.2rem; /* Font size for button */
+  font-weight: bold; /* Bold font for button */
+  border-radius: 5px; /* Rounded corners */
+  transition: background-color 0.3s ease; /* Smooth transition on hover */
 }
 
 .cta-button:hover {
-  background-color: #ff4757;
+  background-color: #ff4757; /* Change button color on hover */
 }
 
-
-
 h1, h2 {
-  color: var(--primary-color);
-  margin-bottom: 1rem;
+  color: var(--primary-color); /* Heading color */
+  margin-bottom: 1rem; /* Space below heading */
 }
 
 section {
-  padding: 2rem 2rem;
+  padding: 2rem 2rem; /* Padding around sections */
 }
 
 button {
-  background-color: var(--accent-color);
-  color: #fff;
-  border: none;
-  padding: 10px 20px;
-  cursor: pointer;
-  border-radius: 5px;
-  transition: background-color 0.3s ease;
+  background-color: var(--accent-color); /* Button background color */
+  color: #fff; /* Button text color */
+  border: none; /* Remove border */
+  padding: 10px 20px; /* Padding inside button */
+  cursor: pointer; /* Cursor changes to pointer on hover */
+  border-radius: 5px; /* Rounded corners */
+  transition: background-color 0.3s ease; /* Smooth transition on hover */
 }
 
-
-
 button:hover {
-  background-color: #ff4757;
+  background-color: #ff4757; /* Change button color on hover */
 }
 
 form {
-  display: flex;
-  flex-direction: column;
-  max-width: 500px;
-  margin: 0 auto;
+  display: flex; /* Flex layout for form */
+  flex-direction: column; /* Stack form elements vertically */
+  max-width: 500px; /* Maximum width for form */
+  margin: 0 auto; /* Center form */
 }
 
 label {
-  margin-bottom: 5px;
-  font-weight: bold;
+  margin-bottom: 5px; /* Space below labels */
+  font-weight: bold; /* Bold font for labels */
 }
 
 input, textarea {
-  margin-bottom: 15px;
-  padding: 10px;
-  border: 1px solid #ccc;
-  border-radius: 4px;
+  margin-bottom: 15px; /* Space below input fields */
+  padding: 10px; /* Padding inside input fields */
+  border: 1px solid #ccc; /* Border for input fields */
+  border-radius: 4px; /* Rounded corners */
 }
 
 .logo {
-  display: flex;
-  align-items: center;
+  display: flex; /* Flex layout for logo */
+  align-items: center; /* Center logo items vertically */
 }
 
 .logo img {
-  max-height: 50px; 
-  width: auto;
-  object-fit: contain;
+  max-height: 50px; /* Maximum height for logo image */
+  width: auto; /* Maintain aspect ratio */
+  object-fit: contain; /* Fit logo within bounds */
 }
 
 .menu-items {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-  gap: 2rem;
+  display: grid; /* Grid layout for menu items */
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); /* Responsive grid */
+  gap: 2rem; /* Space between grid items */
 }
 
 .menu-category {
-  margin-bottom: 2rem;
+  margin-bottom: 2rem; /* Space below menu categories */
 }
 
 .menu-category h3 {
-  margin-bottom: 1rem;
-  color: var(--accent-color);
+  margin-bottom: 1rem; /* Space below category headings */
+  color: var(--accent-color); /* Category heading color */
 }
 
 .menu-category ul {
-  list-style-type: none;
+  list-style-type: none; /* Remove bullet points */
 }
 
 .menu-category ul li {
-  margin-bottom: 0.5rem;
+  margin-bottom: 0.5rem; /* Space below list items */
 }
 
-
-
-
-
 .gallery {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-  gap: 1rem;
+  display: grid; /* Grid layout for gallery */
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); /* Responsive grid */
+  gap: 1rem; /* Space between grid items */
 }
 
 .gallery img {
-  width: 100%;
-  height: 250px;
-  object-fit: cover;
-  border-radius: 8px;
-  transition: transform 0.3s ease;
+  width: 100%; /* Full width for images */
+  height: 250px; /* Fixed height for images */
+  object-fit: cover; /* Cover the area without distorting */
+  border-radius: 8px; /* Rounded corners for images */
+  transition: transform 0.3s ease; /* Smooth zoom on hover */
 }
 
 .gallery img:hover {
-  transform: scale(1.05);
+  transform: scale(1.05); /* Zoom in effect on hover */
 }
 
 footer {
-  background-color: #333;
-  color: #fff;
-  padding: 2rem 0;
-  text-align: center;
+  background-color: #333; /* Footer background color */
+  color: #fff; /* Footer text color */
+  padding: 2rem 0; /* Padding around footer */
+  text-align: center; /* Center footer text */
 }
 
 .footer-content {
-  max-width: 1200px;
-  margin: 0 auto;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+  max-width: 1200px; /* Maximum width for footer content */
+  margin: 0 auto; /* Center footer content */
+  display: flex; /* Flex layout */
+  flex-direction: column; /* Stack footer items vertically */
+  align-items: center; /* Center items horizontally */
 }
 
 .footer-logo {
-  max-width: 150px;
-  margin-bottom: 1rem;
+  max-width: 150px; /* Maximum width for footer logo */
+  margin-bottom: 1rem; /* Space below footer logo */
 }
 
 .social-links {
-  margin-bottom: 1rem;
+  margin-bottom: 1rem; /* Space below social links */
 }
 
 .social-links a {
-  color: #fff;
-  font-size: 1.5rem;
-  margin: 0 10px;
-  transition: color 0.3s ease;
+  color: #fff; /* Social link color */
+  font-size: 1.5rem; /* Font size for social icons */
+  margin: 0 10px; /* Space between icons */
+  transition: color 0.3s ease; /* Smooth transition on hover */
 }
 
 .social-links a:hover {
-  color: #ff6b6b; 
+  color: #ff6b6b; /* Change color on hover */
 }
 
 footer p {
-  margin: 0;
-  font-size: 0.9rem;
+  margin: 0; /* Remove default margin */
+  font-size: 0.9rem; /* Font size for footer text */
 }
 
-
-
 #about {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  text-align: center;
+  display: flex; /* Flex layout for about section */
+  flex-direction: column; /* Stack items vertically */
+  align-items: center; /* Center items horizontally */
+    text-align: center; /* Center text within the about section */
 }
 
 #about img {
-  max-width: 100%;
-  height: auto;
-  max-height: 400px;
-  object-fit: cover;
-  border-radius: 8px;
-  margin-top: 2rem;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  max-width: 100%; /* Image takes full width */
+  height: auto; /* Maintain aspect ratio */
+  max-height: 400px; /* Maximum height for images */
+  object-fit: cover; /* Cover the image within the bounds */
+  border-radius: 8px; /* Rounded corners */
+  margin-top: 2rem; /* Space above the image */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Soft shadow for the image */
 }
 
 @media screen and (max-width: 768px) {
-.menu-items {
-  grid-template-columns: 1fr;
-}
+  .menu-items {
+    grid-template-columns: 1fr; /* Stack menu items in a single column on smaller screens */
+  }
 }
 
 @media screen and (max-width: 768px) {
-.hero h1 {
-  font-size: 2.5rem;
-}
+  .hero h1 {
+    font-size: 2.5rem; /* Smaller font size for hero heading on smaller screens */
+  }
 
-.hero p {
-  font-size: 1.2rem;
-}
+  .hero p {
+    font-size: 1.2rem; /* Smaller font size for hero paragraph on smaller screens */
+  }
 }
 
 @media screen and (max-width: 768px) {
   .footer-logo {
-    max-width: 100px;
+    max-width: 100px; /* Smaller logo in the footer for smaller screens */
   }
 
   .social-links a {
-    font-size: 1.2rem;
-    margin: 0 8px;
+    font-size: 1.2rem; /* Smaller social icon size */
+    margin: 0 8px; /* Adjust spacing between icons */
   }
 }
 
 @media screen and (max-width: 768px) {
   .logo img {
-    max-height: 40px; 
+    max-height: 40px; /* Smaller logo height for responsiveness */
   }
 }
 
 @media screen and (min-width: 768px) {
   #about {
-      flex-direction: row;
-      text-align: left;
-      justify-content: space-between;
-      align-items: flex-start;
+      flex-direction: row; /* Arrange about section items in a row for larger screens */
+      text-align: left; /* Align text to the left */
+      justify-content: space-between; /* Space items evenly */
+      align-items: flex-start; /* Align items to the start */
   }
 
   #about .content {
-      flex: 1;
-      padding-right: 2rem;
+      flex: 1; /* Flex-grow for about content */
+      padding-right: 2rem; /* Space to the right of content */
   }
 
   #about img {
-      flex: 1;
-      max-width: 50%;
+      flex: 1; /* Flex-grow for images */
+      max-width: 50%; /* Limit width to half */
   }
 }
 
 @media screen and (max-width: 768px) {
   .nav-toggle-label {
-    display: block;
-    padding: 1rem;
+    display: block; /* Show nav toggle label for smaller screens */
+    padding: 1rem; /* Padding around the toggle label */
   }
 
   .nav-toggle-label span,
   .nav-toggle-label span::before,
   .nav-toggle-label span::after {
-    display: block;
-    background: white;
-    height: 2px;
-    width: 2rem;
-    position: relative;
+    display: block; /* Display toggle icon parts */
+    background: white; /* Color for the icon lines */
+    height: 2px; /* Line height */
+    width: 2rem; /* Line width */
+    position: relative; /* Position for pseudo-elements */
   }
 
   .nav-toggle-label span::before,
   .nav-toggle-label span::after {
-    content: '';
-    position: absolute;
+    content: ''; /* Create pseudo-elements for the lines */
+    position: absolute; /* Position relative to the span */
   }
 
   .nav-toggle-label span::before {
-    bottom: 7px;
+    bottom: 7px; /* Position line above */
   }
 
   .nav-toggle-label span::after {
-    top: 7px;
+    top: 7px; /* Position line below */
   }
 
   nav ul {
-    position: fixed;
-    top: 60px;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background: var(--primary-color);
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    transform: translateX(100%);
-    transition: transform 0.3s ease;
+    position: fixed; /* Fix nav to cover the screen */
+    top: 60px; /* Below the header */
+    left: 0; /* Align to the left */
+    right: 0; /* Align to the right */
+    bottom: 0; /* Cover to the bottom */
+    background: var(--primary-color); /* Nav background color */
+    flex-direction: column; /* Stack items vertically */
+    align-items: center; /* Center nav items */
+    justify-content: center; /* Center nav items vertically */
+    transform: translateX(100%); /* Hide nav by default */
+    transition: transform 0.3s ease; /* Smooth transition for nav */
   }
 
   nav ul li {
-    margin: 1rem 0;
+    margin: 1rem 0; /* Space between nav items */
   }
 
   .nav-toggle:checked ~ ul {
-    transform: translateX(0);
+    transform: translateX(0); /* Show nav when toggled */
   }
 
   .menu-category {
-    flex-basis: 100%;
+    flex-basis: 100%; /* Full width for menu categories */
   }
 }
+
